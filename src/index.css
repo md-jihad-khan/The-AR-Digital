@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #000003,
+    #11111f,
+    #181b35,
+    #20254c,
+    #292f65,
+    #332d62,
+    #3c2a5f,
+    #43285c,
+    #3c1d3f,
+    #2e1427,
+    #1d0d15,
+    #000000
+  );
+  background-size: cover; /* Ensures the background covers the entire viewport */
+  background-position: center; /* Center the background */
+  background-attachment: fixed; /* Makes the background fixed and stay in place */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  min-height: 100vh; /* Ensures the body covers the entire viewport height */
+  margin: 0; /* Removes any default margins */
+  padding: 0;
+}
+
+.bg-blue {
+  background-color: #0091ff;
+}
+
+.text-main {
+  background: linear-gradient(to right, #ff80ec, #3f39ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-main {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #3f39ff, #ff80ec) 1;
+}
