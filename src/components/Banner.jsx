@@ -10,14 +10,9 @@ import CountUp from "react-countup";
 const Banner = () => {
   return (
     <section className="font-roboto text-white  min-h-full">
-      <div className="flex items-center justify-center pt-5 pb-3 backdrop-blur-md shadow-md bg-white/10 ">
-        <div className="flex items-center">
-          <img className="w-10 " src={logo} alt="" />
-          <h1 className="text-3xl font-bold">The AR Digital</h1>
-        </div>
-      </div>
+      {/* <div className="flex items-center justify-center pt-5 pb-3 backdrop-blur-md shadow-md bg-white/10 "></div> */}
 
-      <div className="mt-10 relative">
+      <div className="pt-10 relative">
         {/* content */}
         <div className=" relative">
           <motion.img
@@ -34,8 +29,12 @@ const Banner = () => {
             src={structure1}
             alt="Structure"
           />
-          <div className="space-y-4 text-center pl-10 z-10 relative">
-            <h3 className="text-7xl font-bold">
+          <div className="space-y-4 text-center px-2 md:px-10 z-10 relative">
+            <div className="flex mb-10 text-3xl items-center justify-center">
+              <img className="w-10 " src={logo} alt="" />
+              <h1 className=" font-bold ">The AR Digital</h1>
+            </div>
+            <h3 className="text-5xl md:text-7xl font-bold relative">
               We Developed <br />
               <span className="relative">
                 <span className="relative inline-block">
@@ -71,12 +70,12 @@ const Banner = () => {
               needs.{" "}
             </p>
 
-            <div className="flex items-center justify-center gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5">
               <btn className=" font-semibold hover:scale-105 ease-in-out duration-300  border-main hover:text-black border-none rounded-none hover:bg-white bg-transparent  btn   text-white ">
                 <FaCalendarAlt /> Book a Appointment
               </btn>
 
-              <div className=" flex gap-3 border-white p-3 rounded-md backdrop-blur-md bg-white/20">
+              <div className=" flex  gap-3 border-white p-3 rounded-md backdrop-blur-md bg-white/20">
                 <div className="avatar-group -space-x-4 rtl:space-x-reverse">
                   <div className="avatar">
                     <div className="w-8">
