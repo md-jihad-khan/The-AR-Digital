@@ -42,3 +42,7 @@ body {
   border-style: solid;
   border-image: linear-gradient(to right, #3f39ff, #ff80ec) 1;
 }
+
+.gradient-border {
+  border-image: linear-gradient(to right, #3f39ff, #ff80ec) 1;
+}

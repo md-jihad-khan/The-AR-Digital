@@ -71,9 +71,9 @@ const Banner = () => {
             </p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-5">
-              <btn className=" font-semibold hover:scale-105 ease-in-out duration-300  border-main hover:text-black border-none rounded-none hover:bg-white bg-transparent  btn   text-white ">
+              <button className=" font-semibold hover:scale-105 ease-in-out duration-300  border-main hover:text-black border-none rounded-none hover:bg-white bg-transparent  btn   text-white ">
                 <FaCalendarAlt /> Book a Appointment
-              </btn>
+              </button>
 
               <div className=" flex  gap-3 border-white p-3 rounded-md backdrop-blur-md bg-white/20">
                 <div className="avatar-group -space-x-4 rtl:space-x-reverse">
