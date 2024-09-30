@@ -10,8 +10,6 @@ import CountUp from "react-countup";
 const Banner = () => {
   return (
     <section className="font-roboto text-white  min-h-full">
-      {/* <div className="flex items-center justify-center pt-5 pb-3 backdrop-blur-md shadow-md bg-white/10 "></div> */}
-
       <div className="pt-10 relative">
         {/* content */}
         <div className=" relative">
