@@ -4,21 +4,26 @@ import { motion } from "framer-motion";
 
 const Reviews = () => {
   return (
-    <section className="text-center py-5  overflow-x-hidden text-white font-roboto">
+    <section className="text-center py-5  overflow-x-hidden  font-roboto">
       <h1 className="font-bold relative text-6xl text-main">
-        Reviews{" "}
+        <span className="text-main">Reviews </span>
         <span className=" inline-block">
           <motion.img
             className="w-16 absolute top-0 transform -translate-y-1/2 z-10"
             src={ring}
-            alt="star"
-            initial={{ y: 0, rotate: 0, opacity: 1 }} // Make sure opacity starts at 1
-            animate={{ y: [0, -20, 0], rotate: [0, -2, 2, 0], opacity: 1 }} // Ensure opacity is set to 1
+            alt="oval"
+            initial={{ y: 0, rotate: 0, opacity: 1 }} // Starts at normal position
+            animate={{
+              y: [0, -10, 0], // Subtle vertical movement (up and down by 10px)
+              rotate: [0, -15, 15, 0], // Gentle rotation back and forth
+              scale: [1, 1.1, 1], // Slight scaling to give a pulsating effect
+              opacity: 1, // Opacity stays constant
+            }}
             transition={{
-              duration: 3, // Slower, smooth movement
-              ease: "easeInOut", // Smooth easing
+              duration: 5, // Longer duration for a smoother, slower effect
+              ease: "easeInOut", // Smooth easing effect
               repeat: Infinity, // Infinite loop
-              repeatType: "mirror", // Reverses smoothly after each cycle
+              repeatType: "mirror", // Reverses after each cycle for smooth looping
             }}
           />
         </span>
