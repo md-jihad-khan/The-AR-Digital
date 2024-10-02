@@ -5,9 +5,13 @@ import Lenis from "@studio-freight/lenis";
 import dentistImage from "../assets/dentist.jpg";
 import trophy from "../assets/diana.png";
 import { motion } from "framer-motion";
+import bakery from "../assets/bakery.jpg";
+import realestate from "../assets/realestate.jpg";
+import fashion from "../assets/fashion.jpg";
 
 const clientSuccessStories = [
   {
+    heading: "Helping a Dentist Get More Organized",
     title:
       "Enhancing Efficiency for a Dental Clinic with a Custom Appointment System",
     story:
@@ -16,28 +20,28 @@ const clientSuccessStories = [
     src: dentistImage,
   },
   {
+    heading: "Making a Bakery's Website Super Easy to Use",
     title: "Transforming a Local Bakery's Online Presence",
     story:
       "We built a responsive website for a local bakery with an easy-to-use online ordering system and SEO optimization. Within three months, they saw a 150% increase in orders, expanding their customer base beyond the local area.",
     color: "#1A1A2E",
+    src: bakery,
   },
   {
+    heading: "Helping a Real Estate Agency Get More Customers",
     title: "Real Estate Agency's Lead Surge",
     story:
       "We revamped a real estate agency's website, adding advanced property search and lead capture features. The agency saw a 200% increase in qualified leads within two months, turning their site into a lead generation powerhouse.",
     color: "#252542",
+    src: realestate,
   },
   {
+    heading: "Boosting Sales for a Fashion Brand",
     title: "E-Commerce Success for Fashion Brand",
     story:
       "For an emerging fashion brand, we developed a sleek e-commerce platform with seamless navigation and integrated payments. Post-launch, the brand saw a 50% rise in sales, positioning them for expansion into new markets.",
     color: "#2E2E52",
-  },
-  {
-    title: "SEO Drives Startup's Growth",
-    story:
-      "We optimized a tech startup’s website for SEO and mobile responsiveness. In six months, they experienced a 300% increase in organic traffic, helping them secure more customers and investor interest.",
-    color: "#37375A",
+    src: fashion,
   },
 ];
 
