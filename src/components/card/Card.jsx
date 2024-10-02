@@ -45,20 +45,16 @@ const Card = ({
 
             <p className="text-xs md:text-base lg:text-base leading-relaxed bg-white/10  rounded-2xl p-2">
               {story}
-              <span className="text-3xl font-title first-letter:font-extrabold first-letter:mr-1">
-                {/* This is for the first letter styling */}
-              </span>
             </p>
           </div>
 
           {/* Image Section */}
           <div className="relative h-1/2 sm:h-auto rounded-2xl sm:w-3/5 border-4 border-white/20  overflow-hidden">
             <motion.div className=" " style={{ scale: imageScale }}>
-              <img
-                src={src}
-                alt="image"
-                className="object-cover   md:w-full "
-              />
+              <div className="relative">
+                <img src={src} alt="image" className="object-cover md:w-full" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black  via-transparent to-transparent"></div>
+              </div>
             </motion.div>
           </div>
         </div>

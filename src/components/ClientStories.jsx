@@ -64,7 +64,7 @@ const ClientStories = () => {
   }, []);
 
   return (
-    <div ref={container} className="relative text-white mt-[10vh] pb-10">
+    <section ref={container} className="relative text-white mt-[10vh] pb-10">
       <h3 className="text-5xl text-center md:text-7xl font-bold relative">
         <span className="text-main mr-4">Client</span>Success Stories
       </h3>
@@ -103,7 +103,7 @@ const ClientStories = () => {
           />
         );
       })}
-    </div>
+    </section>
   );
 };
 
