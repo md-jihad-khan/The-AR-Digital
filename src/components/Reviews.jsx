@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Reviews = () => {
   return (
     <section className="text-center py-5  overflow-x-hidden  font-roboto">
-      <h1 className="font-bold relative text-6xl text-main">
+      <h2 className="font-bold relative text-6xl text-main">
         <span className="text-main">Reviews </span>
         <span className=" inline-block">
           <motion.img
@@ -27,7 +27,7 @@ const Reviews = () => {
             }}
           />
         </span>
-      </h1>
+      </h2>
       <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_25%,black_75%,transparent)] relative z-10  mx-auto my-10">
         <Marquee>
           <div className="flex z-10 relative justify-between items-stretch text-center gap-10 mr-10">

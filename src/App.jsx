@@ -3,6 +3,7 @@ import ClientStories from "./components/ClientStories";
 import Faq from "./components/Faq";
 import ProjectAbout from "./components/ProjectAbout";
 import Reviews from "./components/Reviews";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Reviews />
       <ClientStories />
       <Faq />
+      <WhyChooseUs />
     </>
   );
 }
